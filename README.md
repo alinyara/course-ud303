@@ -28,7 +28,8 @@ This view will be used to answer question 1 and 2.
     c = db.cursor()
     c.execute("create view question1_table as select name, 
     title, path from (select name, title, slug from articles 
-    join authors on articles.author = authors.id) as newtable join log on log.path like concat('%', newtable.slug);")
+    join authors on articles.author = authors.id) as newtable 
+    join log on log.path like concat('%', newtable.slug);")
     db.close()
 ```
 
@@ -37,7 +38,9 @@ This view will be used to answer question 3.
     createview2():
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
-    c.execute("create view logerror as select date(time) as date, count(*) as total, sum(case when status != '200 OK' then 1 else 0 end) as lista from log group by date(time) order by lista;")
+    c.execute("create view logerror as select date(time) as date, 
+    count(*) as total, sum(case when status != '200 OK' then 1 else 0 end) 
+    as lista from log group by date(time) order by lista;")
     db.close()
 ```
 #### Execute
