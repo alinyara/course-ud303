@@ -26,7 +26,7 @@ TO RUN
     c = db.cursor()
     c.execute("create view logerror as select date(time) as date, count(*) as total, sum(case when status != '200 OK' then 1 else 0 end) as lista from log group by date(time) order by lista;")
     db.close()"
-</p>
+</p><BR>
 - To execute the program, run python newsdb.py on the command line.
 
 
