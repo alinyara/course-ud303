@@ -1,5 +1,5 @@
 <div><b>LOG ANALYSIS PROJECT</b><br>
-Full Stack NanoDegree Program</div>
+Full Stack NanoDegree Program</div><br>
 
 For this project, the goal is to create a reporting tool which is able to summarize the questions asked using the data that was given.
 
@@ -19,7 +19,7 @@ For this project, the goal is to create a reporting tool which is able to summar
     c = db.cursor()
     c.execute("create view question1_table as select name, title, path from (select name, title, slug from articles join authors on articles.author = authors.id) as newtable join log on log.path like concat('%', newtable.slug);")
     db.close()"
-</p><br>
+</p>
 #Question3
 <p>"def createview2():
     db = psycopg2.connect(database=DBNAME)
