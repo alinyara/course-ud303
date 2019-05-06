@@ -1,4 +1,4 @@
-<div><b>LOG ANALYSIS PROJECT</b>
+<div><b>LOG ANALYSIS PROJECT</b><br>
 Full Stack NanoDegree Program</div>
 
 For this project, the goal is to create a reporting tool which is able to summarize the questions asked using the data that was given.
