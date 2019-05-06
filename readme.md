@@ -1,7 +1,6 @@
-LOG ANALYSIS PROJECT
-Full Stack NanoDegree Program
+<p><b>LOG ANALYSIS PROJECT</b><BR>
+Full Stack NanoDegree Program</p>
 
-DESCRIPTION
 For this project, the goal is to create a reporting tool which is able to summarize the questions asked using the data that was given.
 
 GETTING READY
@@ -29,3 +28,5 @@ TO RUN
     db.close()"
 
 - To execute the program, run python newsdb.py on the command line.
+
+
